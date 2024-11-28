@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #todo-form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      #todo-input {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      #add-button {
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      #todo-list {
+        list-style-type: none;
+        padding: 0;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .todo-item {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .todo-text {
+        flex-grow: 1;
+        margin: 0 10px;
+      }
+      .todo-text.done {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .action-buttons button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Todo App</h1>
+
+    <form id="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Enter a new task"
+        required
+      />
+      <button type="submit" id="add-button">Add Task</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>
